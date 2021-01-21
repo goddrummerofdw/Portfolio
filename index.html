@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Maven+Pro&display=swap");
+      body {
+        margin: 0;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      /*Desktop Start*/
+
+      /*Navbar Start*/
+      .navbar {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: 8vh;
+        background-color: black;
+      }
+      .box1 {
+        background-color: black;
+        display: flex;
+        align-items: center;
+      }
+      .box1 img {
+        display: flex;
+        align-items: center;
+      }
+      .box2 {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .box2 ul {
+        display: flex;
+        width: 59%;
+        justify-content: space-around;
+      }
+      .logo {
+        position: relative;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+      }
+      li a:hover {
+        color: #6a6255;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+
+      /*Navbar End*/
+
+      /*Homepage Start*/
+      .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: minmax(92vh, auto);
+      }
+      .box3 {
+        background-image: url("ipad-hmpg.png");
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-size: 3rem;
+      }
+
+      .box4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        font-size: 1.5em;
+      }
+      h1,
+      .box3 p {
+        position: relative;
+        top: 60%;
+        left: 5%;
+        padding: 0;
+        margin: 0;
+      }
+      :focus {
+        border: 0;
+      }
+
+      /*Homepage End*/
+
+      /*Desktop End*/
+
+      /*iPad Start*/
+      @media only screen and (max-device-width: 768px) {
+        li a {
+          font-size: 2.5rem;
+        }
+        .main-container {
+          grid-template-columns: 1fr;
+          grid-auto-rows: minmax(100vh, auto);
+        }
+        .box3 {
+          background-image: url("ipad-hmpg.png");
+          background-size: cover;
+          background-position: center;
+        }
+        h1,
+        .box3 p {
+          width: 50%;
+          left: 15%;
+          top: 65%;
+        }
+        .box4 {
+          font-size: 3rem;
+        }
+        .box4 p {
+          padding: 1em;
+        }
+        .logo {
+          height: 80px;
+          width: 80px;
+        }
+      }
+
+      /*iPad End*/
+
+      /*Mobile Start*/
+      @media screen and (max-device-width: 640px) {
+        /*Navbar*/
+        li a {
+          font-size: 3rem;
+        }
+        /*Navbar*/
+        .main-container {
+          grid-template-columns: 1fr;
+          grid-auto-rows: minmax(100vh, auto);
+        }
+        .box3 {
+          background-image: url("mobile-hmpg.png");
+          background-size: cover;
+          background-position: center;
+        }
+        h1,
+        .box3 p {
+          width: 50%;
+          left: 15%;
+          top: 65%;
+        }
+        h1 {
+          font-size: 10rem;
+        }
+        .box4 {
+          font-size: 4rem;
+        }
+        .logo {
+          height: 120px;
+          width: 120px;
+        }
+      }
+
+      /*Mobile End*/
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="box box1">
+        <a href="index.html">
+          <img class="logo" src="romanlogo.png" />
+        </a>
+      </div>
+      <div class="box box2">
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="form.html">More Info</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="box box3">
+        <h1>Frontend Developer</h1>
+        <p>Carlos Roman</p>
+      </div>
+
+      <div class="box box4">
+        <p>
+          Nice to meet you, my name is Carlos. I’m a student. This is my page. I
+          hope you like it!Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry. Lorem Ipsum has been the industry’s standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

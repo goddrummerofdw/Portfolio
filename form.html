@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Maven+Pro&display=swap");
+      body {
+        margin: 0;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      /*Desktop Start*/
+
+      /*Navbar Start*/
+      .navbar {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: 8vh;
+        background-color: black;
+      }
+
+      .box1 {
+        background-color: black;
+        display: flex;
+        align-items: center;
+      }
+
+      .box1 img {
+        display: flex;
+        align-items: center;
+      }
+
+      .box2 {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .box2 ul {
+        display: flex;
+        width: 59%;
+        justify-content: space-around;
+      }
+
+      .logo {
+        position: relative;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+      }
+
+      li a:hover {
+        color: #6a6255;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      /*Navbar End*/
+
+      /*Desktop-More-Info-Start*/
+      .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: minmax(92vh, auto);
+      }
+
+      .box3 {
+        background-image: url("desktop-contact.png");
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-size: 3rem;
+      }
+
+      .box4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        font-size: 1.5em;
+      }
+      .about-heading {
+        display: none;
+      }
+      .box5 {
+        display: none;
+      }
+
+      .switch {
+        color: white;
+        position: absolute;
+        left: 5%;
+        font-size: 2.5rem;
+      }
+      .switch p {
+        font-weight: bold;
+        font-size: 4rem;
+      }
+
+      .name-container {
+        display: flex;
+      }
+
+      .ncontainer1 {
+        display: block;
+      }
+
+      .ncontainer2 {
+        display: block;
+        padding-left: 1em;
+      }
+
+      .message {
+        color: white;
+      }
+
+      input[type="text"],
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        padding-left: 0.5em;
+        outline: none;
+      }
+      .form-submit-btn {
+        width: 85px;
+        height: 30px;
+        position: relative;
+        float: right;
+        border-radius: 5px;
+        background-image: linear-gradient(to right, #844326, #fa581d);
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        outline: none;
+      }
+      .programming-logo {
+        width: 200px;
+        height: 100px;
+        align-self: flex-end;
+      }
+      /*Desktop-More-Info-End*/
+
+      /*iPad Start*/
+      @media only screen and (max-device-width: 768px) {
+        /*Navbar*/
+        li a {
+          font-size: 2.5rem;
+        }
+        /*Navbar*/
+        /*Main-pg*/
+        .main-container {
+          grid-template-columns: 1fr;
+          grid-auto-rows: 100vh;
+        }
+        .box3 {
+          background-image: url("ipad-hmpg.png");
+          background-size: cover;
+          background-position: center;
+        }
+
+        .box4 {
+          font-size: 3rem;
+        }
+
+        .logo {
+          height: 80px;
+          width: 80px;
+        }
+        .box5 {
+          display: flex;
+          background-image: linear-gradient(to bottom right, #6a6255, #2d3229);
+          justify-content: center;
+        }
+        .about-heading {
+          display: initial;
+          font-size: 8rem;
+          position: relative;
+          top: 60%;
+          left: 25%;
+        }
+        h1 {
+          display: none;
+        }
+        /*main-pg*/
+
+        /*Form*/
+        .switch p {
+          font-weight: bold;
+          font-size: 8rem;
+        }
+        .switch {
+          position: initial;
+          color: white;
+          font-size: 3.5rem;
+        }
+        input[type="text"],
+        textarea {
+          font-size: 2rem;
+        }
+        .form-submit-btn {
+          width: 140px;
+          height: 60px;
+          font-size: 1.5rem;
+        }
+      }
+      /*Form*/
+      /*iPad End*/
+
+      /*Mobile Start*/
+      @media screen and (max-device-width: 640px) {
+        /*Navbar*/
+        li a {
+          font-size: 3rem;
+        }
+        /*Navbar*/
+        /*Main content*/
+        .main-container {
+          grid-template-columns: 1fr;
+          grid-auto-rows: 100vh;
+        }
+        .box3 {
+          background-image: url("mobile-hmpg.png");
+          background-size: cover;
+          background-position: center;
+        }
+
+        h1 {
+          display: none;
+        }
+        .box4 {
+          font-size: 4rem;
+        }
+
+        .logo {
+          height: 120px;
+          width: 120px;
+        }
+        /*Main contnet*/
+        /*Form*/
+        .switch {
+          font-size: 4rem;
+          padding: 1em;
+        }
+        .switch p {
+          font-weight: bold;
+          font-size: 10rem;
+        }
+        .form-submit-btn {
+          height: 90px;
+          width: 180px;
+          font-size: 2rem;
+        }
+        input[type="text"],
+        textarea {
+          font-size: 3rem;
+        }
+      }
+
+      /*Mobile End*/
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="box box1">
+        <a href="index.html">
+          <img class="logo" src="romanlogo.png" />
+        </a>
+      </div>
+      <div class="box box2">
+        <ul>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="form.html">More Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="box box3">
+        <h1 class="about-heading">About</h1>
+        <form class="switch">
+          <p>Let's Work!</p>
+          <div class="name-container">
+            <div class="ncontainer-1">
+              <label for="fname">First Name:</label><br />
+              <input type="text" id="fname" name="fname" /><br />
+            </div>
+
+            <div class="ncontainer2">
+              <label for="lname">Last Name:</label><br />
+              <input type="text" id="lname" name="lname" /><br />
+            </div>
+          </div>
+
+          <br /><label for="phone">Phone:</label><br />
+          <input type="text" id="phone" name="phone" /><br />
+          <br /><label for="email">Email:</label><br />
+          <input type="text" id="email" name="name" /><br />
+
+          <br /><label for="message">Message:</label><br />
+          <textarea
+            class="message"
+            name="message"
+            rows="6"
+            style="color: black"
+          ></textarea
+          ><br />
+
+          <input type="button" class="form-submit-btn" value="Submit" />
+        </form>
+      </div>
+
+      <div class="box box4">
+        <h1>About</h1>
+        <p>
+          123Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry’s standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.456
+        </p>
+        <img src="skill-logo.png" class="programming-logo" />
+      </div>
+      <div id="bx5" class="box box5"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
